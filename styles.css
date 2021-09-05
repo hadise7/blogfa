@@ -189,15 +189,11 @@ p{
     align-items: center;
     justify-content: center;
 
-    
 }
 
 .footer ul {
     list-style-type: none;
-    display: flex;
-    
-    
-    
+    display: flex;  
 }
 
 .footer ul li {
@@ -209,4 +205,25 @@ p{
 .footer ul a {
     color: blue;
     text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 15px;
+    }
+    .banner,
+    .login {
+        width: 100%;
+        
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .footer {
+        display: none;
+    }
 }
